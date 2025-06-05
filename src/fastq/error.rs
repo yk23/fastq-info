@@ -17,6 +17,9 @@ pub enum FastQError {
     #[error("Decompression error. Reason: {0}")]
     DecompressionError(String),
 
-    #[error("File `{filename}` is not a properly formatted fastQ file. [Line {mal_line_no}: {malformed_line}]")]
-    WrongFormat { filename: String, malformed_line: String, mal_line_no: usize },
+    #[error("File is not a properly formatted fastQ file. [Line {mal_line_no}: {malformed_line}]")]
+    WrongFormat { malformed_line: String, mal_line_no: usize },
+
+    #[error("Error while reading file. Reason: {0}")]
+    FileReadError(String),
 }

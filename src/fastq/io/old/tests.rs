@@ -1,6 +1,6 @@
 use std::path::PathBuf;
 use super::super::error::FastQError;
-use super::reader::FastQReader;
+// use super::reader::FastQReader;
 use super::compression::*;
 use super::validate::*;
 
