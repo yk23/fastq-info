@@ -3,7 +3,7 @@
 A simple command-line tool for printing diagnostic information about a fastQ file.
 
 ```bash
-> fastq-info ./my_file.fq
+> fastq-info resources/tests/short_example.fq
 
 Number of records: 1
 Max. read length: 60
